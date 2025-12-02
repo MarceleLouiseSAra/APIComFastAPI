@@ -4,7 +4,7 @@ O presente projeto consiste em uma check-list, em que o usuário pode registrar,
 
 Para a configuração do ambiente, em nome das boas práticas, utilizou-se o gerenciador de projetos *poetry* e ferramentas de análise estática e formatação de código.
 
-Com o framework *FastAPI*, realizou-se operações CRUD, criou-se endpoints e schemas e aplicou-se injenções de dependência.
+Com o framework *FastAPI* (0.123.4), realizou-se operações CRUD, criou-se endpoints e schemas e aplicou-se injenções de dependência.
 
 Utilizou-se o *Pydantic* e *SQLAlquemy* para modelagem de dados, e *Alembic* para para configurar as migrações de bancos de dados.
 
@@ -66,4 +66,5 @@ Feche e abra novamente o terminal. Digite:
 ```bash:
 poetry new [nome-do-pacote]
 pyenv local [python-version]
+poetry install
 ```
