@@ -1,16 +1,16 @@
 # APIComFastAPI
 
-O presente projeto consiste em uma check-list, em que o usuário pode registrar, excluir, acessar e atualizar sua lista de tarefas.
+O presente projeto consiste em uma check-list, em que o usuário pode registrar, excluir, acessar e atualizar sua lista de tarefas. Desenvolvida em Linguagem Python (3.12.7), utiliza a ORM *SQLAlchemy* e o banco de dados *SQLite*.
 
-Para a configuração do ambiente, em nome das boas práticas, utilizou-se um gerenciador de projetos e ferramentas de análise estática e formatação de código.
+Para a configuração do ambiente, em nome das boas práticas, utilizou-se o gerenciador de projetos *poetry* e ferramentas de análise estática e formatação de código.
 
-Com o framework FastAPI, realizou-se operações CRUD, criou-se endpoints e schemas e aplicou-se injenções de dependência.
+Com o framework *FastAPI*, realizou-se operações CRUD, criou-se endpoints e schemas e aplicou-se injenções de dependência.
 
-Utilizou-se o Pydantic e SQLAlquemy para modelagem de dados e Alembic para para configurar as migrações de bancos de dados.
+Utilizou-se o *Pydantic* e *SQLAlquemy* para modelagem de dados, e *Alembic* para para configurar as migrações de bancos de dados.
 
-Também, investiu-se em um desenvolvimento orientado a testes, utilizando pytest e coverage, além de um pipeline de integração contínua com o GitHub Actions.
+Também, investiu-se em um desenvolvimento orientado a testes, utilizando *pytest* e coverage, além de um pipeline de integração contínua com o *GitHub Actions*.
 
-Finalmente, fez-se a conteinerização do projeto com Docker e um deploy com Fly.io.
+Finalmente, fez-se a conteinerização do projeto com *Docker* e um deploy com *Fly.io*.
 
 Utilizou-se a arquitetura MVC (Model-View-Controller) para separar os dados e regras de negócio (Model) da interface com a qual o usuário interage (View). A intermediação destes é feita pelo Controller, que recebe as requisições do usuário, solicita a sua execução ao Model e atualiza a View com a resposta.
 
@@ -61,5 +61,9 @@ pipx install poetry
 pipx ensurepath
 ```
 
-Feche e abra novamente o terminal.
+Feche e abra novamente o terminal. Digite:
 
+```bash:
+poetry new [nome-do-pacote]
+pyenv local [python-version]
+```
