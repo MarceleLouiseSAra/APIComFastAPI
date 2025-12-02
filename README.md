@@ -36,9 +36,9 @@ nano .bashrc
 No arquivo ".bashrc", insira as linhas
 
 ```bash:
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
 ```
 Salve o arquivo (Ctrl+S).
 
