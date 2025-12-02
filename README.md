@@ -22,3 +22,35 @@ docker compose up --build
 ```
 
 Para parar a execução, pressione Ctrl+C.
+
+## Configuração do ambiente (Linux/Unix)
+
+* pyenv
+
+```bash:
+
+cd ~
+curl -fsSL https://pyenv.run | bash
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+nano .bashrc
+
+```
+
+No arquivo ".bashrc", insira as linhas
+
+```bash:
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
+
+```
+Salve o arquivo (Ctrl+S).
+
+De volta ao terminal, para aplicar as mudanças, digite
+
+```bash:
+source .bashrc
+
+```
+
+* 
