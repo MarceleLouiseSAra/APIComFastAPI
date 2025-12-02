@@ -24,7 +24,7 @@ Para parar a execução, pressione Ctrl+C.
 
 ## Configuração do ambiente (Linux/Unix)
 
-* pyenv
+* pyenv (version 2.6.13)
 
 ```bash:
 cd ~
@@ -48,4 +48,18 @@ De volta ao terminal, para aplicar as mudanças, digite
 source .bashrc
 ```
 
-* 
+* pipx (version 1.8.0)
+
+```bash:
+pip install pipx
+```
+
+* poetry (version 2.2.1)
+
+```bash:
+pipx install poetry
+pipx ensurepath
+```
+
+Feche e abra novamente o terminal.
+
