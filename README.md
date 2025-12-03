@@ -72,18 +72,17 @@ poetry install
 Para instalar módulos,
 
 ```bash:
-poetry add fastapi[standard]
+poetry add fastapi[standard] # exemplo de módulo
 ```
 
 Para rodar a aplicação,
 
 ```bash:
-poetry env activate
-fastapi dev app.py
+poetry env info --path
 ```
 
-Para problemas com o interpretador, forneça o path:
+Forneça o diretório como interpretador. Feche e abra novamente o terminal.
 
 ```bash:
-poetry env info --path
+fastapi dev checklist/src/checklist/app.py
 ```
