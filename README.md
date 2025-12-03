@@ -1,4 +1,4 @@
-# APIComFastAPI
+# checklistComFastAPI
 
 O presente projeto consiste em uma check-list, em que o usuário pode registrar, excluir, acessar e atualizar sua lista de tarefas. Desenvolvida em Linguagem Python (3.12.7), utiliza a ORM *SQLAlchemy* e o banco de dados *SQLite*.
 
