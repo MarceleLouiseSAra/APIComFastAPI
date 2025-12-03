@@ -2,7 +2,7 @@
 
 O presente projeto consiste em uma check-list, em que o usuário pode registrar, excluir, acessar e atualizar sua lista de tarefas. Desenvolvida em Linguagem Python (3.12.7), utiliza a ORM *SQLAlchemy* e o banco de dados *SQLite*.
 
-Para a configuração do ambiente, em nome das boas práticas, utilizou-se o gerenciador de projetos *poetry* e ferramentas de análise estática e formatação de código.
+Para a configuração do ambiente, em nome das boas práticas, utilizou-se o gerenciador de projetos e ambientes *poetry* e ferramentas de análise estática e formatação de código.
 
 Com o framework *FastAPI* (0.123.4), realizou-se operações CRUD, criou-se endpoints e schemas e aplicou-se injenções de dependência.
 
@@ -67,4 +67,23 @@ Feche e abra novamente o terminal. Digite:
 poetry new [nome-do-pacote]
 pyenv local [python-version]
 poetry install
+```
+
+Para instalar módulos,
+
+```bash:
+poetry add fastapi[standard]
+```
+
+Para rodar a aplicação,
+
+```bash:
+poetry env activate
+fastapi dev app.py
+```
+
+Para problemas com o interpretador, forneça o path:
+
+```bash:
+poetry env info --path
 ```
