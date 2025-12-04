@@ -81,8 +81,11 @@ Para rodar a aplicação,
 poetry env info --path
 ```
 
-Forneça o diretório como interpretador. Feche e abra novamente o terminal.
+Forneça o diretório como interpretador. Feche e abra novamente o terminal. 
+
+Para subir o servidor,
 
 ```bash:
-fastapi dev checklist/src/checklist/app.py
+cd checklist
+task run
 ```
